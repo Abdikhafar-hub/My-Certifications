@@ -75,7 +75,19 @@ const certificates = [
         title: 'Microsoft Certified: Fundamentals of Azure AI Services',
         link: 'https://drive.google.com/file/d/1f90rPZ7l5ceS0XAgv2y1SsCmzAdOdERk/view',
         date: 'September 2024',
-        logo: 'https://res.cloudinary.com/ddkkfumkl/image/upload/v1735658758/azure_zq25x6.png',
+        logo: 'https://res.cloudinary.com/dvuazircp/image/upload/v1698216904/new_portfolio/azure_lmxkhu.webp',
+    },
+    {
+        title: 'Meta Certified Backend Developer',
+        link: 'https://coursera.org/share/f8cc5522562e84a2dc629b9d91aff8ac',
+        date: 'October 2024',
+        logo: 'https://res.cloudinary.com/ddkkfumkl/image/upload/v1731480955/meta-logo_ifg3hz.webp',
+    },
+    {
+        title: 'HackerRank Software Engineer',
+        link: 'https://www.hackerrank.com/certificates/35ad602b5a7b',
+        date: 'August 2024',
+        logo: 'https://res.cloudinary.com/dvuazircp/image/upload/v1697061485/new_portfolio/gdsc_ddlz0h.webp',
     },
 
 ];

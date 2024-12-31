@@ -12,12 +12,11 @@ const CertificateCard = ({ title, link, date, logo }) => {
             tiltMaxAngleX={40}
             tiltMaxAngleY={40}
             transitionSpeed={450}
-            style={{ height: '100%' }}
         >
             <div
                 style={{
-                    width: '300px', // Fixed width
-                    height: '220px', // Fixed height
+                    width: '300px',
+                    height: '220px',
                     border: '1px solid #ddd',
                     padding: '15px',
                     borderRadius: '8px',
@@ -26,7 +25,7 @@ const CertificateCard = ({ title, link, date, logo }) => {
                     boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
                     display: 'flex',
                     flexDirection: 'column',
-                    justifyContent: 'space-between', // Ensures spacing within the card
+                    justifyContent: 'space-between',
                 }}
             >
                 {/* Logo */}
@@ -44,13 +43,29 @@ const CertificateCard = ({ title, link, date, logo }) => {
                 />
                 <h3 style={{ fontSize: '18px', margin: '10px 0' }}>{title}</h3>
                 <p style={{ fontSize: '14px', color: '#666' }}>{date}</p>
+
+                {/* Button */}
                 <a
                     href={link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    style={{ color: '#007bff', textDecoration: 'none', fontSize: '14px' }}
+                    style={{ textDecoration: 'none' }}
                 >
-                    View Certificate
+                    <button
+                        style={{
+                            padding: '10px 15px',
+                            backgroundColor: '#007bff',
+                            color: '#fff',
+                            border: 'none',
+                            borderRadius: '5px',
+                            cursor: 'pointer',
+                            fontSize: '14px',
+                        }}
+                        onMouseOver={(e) => (e.target.style.backgroundColor = '#0056b3')}
+                        onMouseOut={(e) => (e.target.style.backgroundColor = '#007bff')}
+                    >
+                        View Certificate
+                    </button>
                 </a>
             </div>
         </Tilt>
