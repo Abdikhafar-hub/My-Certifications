@@ -1,5 +1,7 @@
 import React from 'react';
 import Tilt from 'react-parallax-tilt';
+import './CertificateCard.css';
+
 
 const CertificateCard = ({ title, link, date, logo }) => {
     return (
@@ -26,7 +28,9 @@ const CertificateCard = ({ title, link, date, logo }) => {
                     display: 'flex',
                     flexDirection: 'column',
                     justifyContent: 'space-between',
+                    margin: '10px auto',
                 }}
+                className="certificate-card"
             >
                 {/* Logo */}
                 <img
@@ -60,6 +64,9 @@ const CertificateCard = ({ title, link, date, logo }) => {
                             borderRadius: '5px',
                             cursor: 'pointer',
                             fontSize: '14px',
+                            width: '100%',
+                            maxWidth: '200px',
+                            margin: '0 auto',
                         }}
                         onMouseOver={(e) => (e.target.style.backgroundColor = '#0056b3')}
                         onMouseOut={(e) => (e.target.style.backgroundColor = '#007bff')}
@@ -73,3 +80,4 @@ const CertificateCard = ({ title, link, date, logo }) => {
 };
 
 export default CertificateCard;
+

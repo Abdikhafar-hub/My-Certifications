@@ -1,0 +1,21 @@
+/* CertificateCard.css */
+@media (max-width: 768px) {
+    .certificate-card {
+        width: 250px;
+        height: 200px;
+        margin: 20px auto;
+    }
+
+    .certificate-card h3 {
+        font-size: 16px;
+    }
+
+    .certificate-card p {
+        font-size: 12px;
+    }
+
+    .certificate-card button {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+}
