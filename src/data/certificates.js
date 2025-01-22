@@ -3,7 +3,7 @@ const certificates = [
         title: 'Complete Ethical Hacking Bootcamp: Packt',
         link: 'https://coursera.org/share/d3ad8198cfda0e128e3ceb63bb31ad94',
         date: 'January 2024',
-        logo: 'https://res.cloudinary.com/ddkkfumkl/image/upload/v1737546645/packt_zdmvgs.png',
+        logo: 'https://res.cloudinary.com/ddkkfumkl/image/upload/v1737578077/pac_lq6u2q.png',
     },
     {
         title: 'Meta Certified Frontend Developer',
