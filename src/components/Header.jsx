@@ -9,7 +9,7 @@ const Header = () => {
         }}>
             {/* Profile image */}
             <img 
-                src="src/assets/me.jpeg"  // Replace with your actual image URL
+                src="/me.jpeg" // Ensure the image is placed in the public/images folder
                 alt="Profile"
                 style={{
                     width: '120px',
@@ -20,8 +20,8 @@ const Header = () => {
                     display: 'block',
                     marginLeft: 'auto',
                     marginRight: 'auto',
-                    maxWidth: '100%',  // Ensures responsiveness
-                    height: 'auto',  // Maintains aspect ratio
+                    maxWidth: '100%', // Ensures responsiveness
+                    height: 'auto', // Maintains aspect ratio
                 }}
                 className="profile-image"
             />
