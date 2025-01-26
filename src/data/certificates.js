@@ -1,5 +1,11 @@
 const certificates = [
     {
+        title: 'Machine Learning: Stanford University',
+        link: 'https://drive.google.com/file/d/1lFUrqKJ9bZWTSXfYb_vgYX1FXgj2E1J3/view?usp=drive_link',
+        date: 'January 2024',
+        logo: 'https://res.cloudinary.com/ddkkfumkl/image/upload/v1737920084/stanford_vflee8.png',
+    },
+    {
         title: 'Complete Ethical Hacking Bootcamp: Packt',
         link: 'https://coursera.org/share/d3ad8198cfda0e128e3ceb63bb31ad94',
         date: 'January 2024',
