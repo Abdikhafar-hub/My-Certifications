@@ -104,4 +104,4 @@ const certificates = [
 
 ];
 
-export default certificates;sss
+export default certificates;
