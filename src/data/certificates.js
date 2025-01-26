@@ -104,4 +104,4 @@ const certificates = [
 
 ];
 
-export default certificates; // This must be a default export
+export default certificates
