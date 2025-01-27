@@ -24,6 +24,12 @@ const certificates = [
         logo: 'https://res.cloudinary.com/ddkkfumkl/image/upload/v1735657567/uoll_r1jbxt.png',
     },
     {
+        title: 'Safaricom Hackathon: Best Portfolio Website',
+        link: 'https://drive.google.com/file/d/1bg0IC0qR6RbZAw3i8nbVc_nCIj_M7-8e/view?usp=drive_link',
+        date: 'January 2024',
+        logo: 'https://res.cloudinary.com/ddkkfumkl/image/upload/v1737127743/saf-removebg-preview_ufqvaj.png',
+    },
+    {
         title: 'KDF leadership Command and Control',
         link: 'https://res.cloudinary.com/ddkkfumkl/image/upload/v1728573961/WhatsApp_Image_2024-10-10_at_6.24.22_PM_ju6cb4.jpg',
         date: 'February 2023',
