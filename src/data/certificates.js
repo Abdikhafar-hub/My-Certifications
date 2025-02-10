@@ -1,7 +1,7 @@
 const certificates = [
     {
         title: 'Machine Learning: Stanford University',
-        link: 'https://drive.google.com/file/d/1lFUrqKJ9bZWTSXfYb_vgYX1FXgj2E1J3/view?usp=drive_link',
+        link: 'https://coursera.org/share/5a3950febafbd257749b803e433b606f',
         date: 'January 2024',
         logo: 'https://res.cloudinary.com/ddkkfumkl/image/upload/v1737920084/stanford_vflee8.png',
     },
