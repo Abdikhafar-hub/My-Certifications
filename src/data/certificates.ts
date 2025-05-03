@@ -134,6 +134,20 @@ const certificates: Certificate[] = [
     logo: 'https://res.cloudinary.com/dvuazircp/image/upload/v1697061485/new_portfolio/gdsc_ddlz0h.webp',
     category: 'Developer Certifications'
   },
+  {
+    title: 'Meta Certified: Full Stack Developer',
+    link: 'https://coursera.org/share/85625bb4ba83ac7e769f769f7502ad10',
+    date: 'April 2024',
+    logo: 'https://res.cloudinary.com/ddkkfumkl/image/upload/v1731480955/meta-logo_ifg3hz.webp',
+    category: 'Developer Certifications'
+  },
+  {
+    title: 'Cybersecurity Essentials: LinkedIn & Microsoft',
+    link: 'https://www.linkedin.com/learning/certificates/c2245704e3c187e818ce7f08067e5d1e11711fddc0c1fdd3458cad43ff60f141?trk=share_certificate',
+    date: 'April 2024',
+    logo: 'https://res.cloudinary.com/ddkkfumkl/image/upload/v1735658297/ms_vkw72d.png',
+    category: 'Cyber Security'
+  },
 ];
 
 export default certificates;
