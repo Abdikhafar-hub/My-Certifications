@@ -7,9 +7,7 @@ import CertificationsGrid from '../components/CertificationsGrid';
 import certificates from '../data/certificates';
 
 const Index = () => {
-  const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('All');
-  const [sortOrder, setSortOrder] = useState<'asc' | 'desc'>('desc');
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
@@ -27,19 +25,13 @@ const Index = () => {
           
           <SearchAndFilter 
             certificates={certificates}
-            searchQuery={searchQuery}
-            setSearchQuery={setSearchQuery}
             selectedCategory={selectedCategory}
             setSelectedCategory={setSelectedCategory}
-            sortOrder={sortOrder}
-            setSortOrder={setSortOrder}
           />
           
           <CertificationsGrid 
             certificates={certificates}
-            searchQuery={searchQuery}
             selectedCategory={selectedCategory}
-            sortOrder={sortOrder}
           />
         </div>
       </main>

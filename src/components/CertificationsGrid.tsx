@@ -5,16 +5,12 @@ import { Certificate } from '../data/certificates';
 
 interface CertificationsGridProps {
   certificates: Certificate[];
-  searchQuery: string;
   selectedCategory: string;
-  sortOrder: 'asc' | 'desc';
 }
 
 const CertificationsGrid = ({ 
   certificates,
-  searchQuery,
   selectedCategory,
-  sortOrder
 }: CertificationsGridProps) => {
   const [isLoading, setIsLoading] = useState(true);
 
@@ -27,21 +23,10 @@ const CertificationsGrid = ({
     return () => clearTimeout(timer);
   }, []);
 
-  // Filter certificates based on search query and category
+  // Filter certificates based on category only
   const filteredCertificates = certificates.filter(cert => {
-    const matchesSearch = cert.title.toLowerCase().includes(searchQuery.toLowerCase());
     const matchesCategory = selectedCategory === 'All' || cert.category === selectedCategory;
-    return matchesSearch && matchesCategory;
-  });
-
-  // Sort certificates based on date
-  const sortedCertificates = [...filteredCertificates].sort((a, b) => {
-    const dateA = new Date(a.date);
-    const dateB = new Date(b.date);
-    
-    return sortOrder === 'asc' 
-      ? dateA.getTime() - dateB.getTime() 
-      : dateB.getTime() - dateA.getTime();
+    return matchesCategory;
   });
 
   if (isLoading) {
@@ -68,18 +53,18 @@ const CertificationsGrid = ({
     );
   }
 
-  if (sortedCertificates.length === 0) {
+  if (filteredCertificates.length === 0) {
     return (
       <div className="text-center py-20">
         <h3 className="text-xl font-medium text-gray-500">No certifications found</h3>
-        <p className="text-gray-400 mt-2">Try adjusting your search or filter criteria</p>
+        <p className="text-gray-400 mt-2">Try adjusting your filter criteria</p>
       </div>
     );
   }
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-      {sortedCertificates.map((certificate, index) => (
+      {filteredCertificates.map((certificate, index) => (
         <CertificationCard 
           key={certificate.title} 
           certificate={certificate} 
