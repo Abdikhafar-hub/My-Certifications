@@ -16,15 +16,15 @@ const Footer = () => {
           </div>
           
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
-            <a href="#" className="flex items-center gap-2 text-gray-600 hover:text-brand-purple transition-colors">
+            <a href="https://www.linkedin.com/in/abdikhafar-issack/" className="flex items-center gap-2 text-gray-600 hover:text-brand-purple transition-colors">
               <User className="h-5 w-5" />
               <span>LinkedIn</span>
             </a>
-            <a href="#" className="flex items-center gap-2 text-gray-600 hover:text-brand-purple transition-colors">
+            <a href="https://github.com/Abdikhafar-hub" className="flex items-center gap-2 text-gray-600 hover:text-brand-purple transition-colors">
               <Link className="h-5 w-5" />
               <span>GitHub</span>
             </a>
-            <a href="#" className="flex items-center gap-2 text-gray-600 hover:text-brand-purple transition-colors">
+            <a href="https://my-portfolio-abdikhafar.vercel.app/" className="flex items-center gap-2 text-gray-600 hover:text-brand-purple transition-colors">
               <FileText className="h-5 w-5" />
               <span>Portfolio</span>
             </a>
